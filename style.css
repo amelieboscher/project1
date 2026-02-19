@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@font-face {
+    font-family: "Varela";
+    src: url(./Police/Varela_Round/VarelaRound-Regular.ttf);
+}
+
+html {
+    font-size: clamp(14px, 1.2vw, 18px);
+}
+
+body {
+    font-family: "Varela", 'Trebuchet MS';
+    background: rgb(255, 214, 221);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-size: 1rem;  /* laisse la base suivre html */
+    overflow-x: hidden;  /* pas hidden partout */
+    overflow-wrap: break-word;
+    align-content: flex-end;
+}
+
+main {
+    font-size: clamp(14px, 1.2vw, 18px);
+}
+
+.flexbox {
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    min-height: 100px;
+    font-size: 26px;
+}
+
+.flexbox2 {
+  margin: auto;
+  min-height: 500px;
+  width: 1200px;
+  font-size: clamp(18px, 1.2vw, 26px);
+}
+
+/* UL = conteneur flex */
+
+#social {
+  margin: 0;
+}
+
+.element span {
+  visibility: hidden;
+  justify-content: center;
+  display: flex;
+}
+
+.element img:hover + span {
+  visibility: visible;
+}
+
+.element {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap; /* évite l'entassement */
+    gap: 12px;  /* espace uniforme */
+    
+}
+
+.topbar {
+    height: 30px;
+}
+
+.layout {
+    flex: 1;
+    display: flex;
+    min-height: 0; /*important*/
+}
+
+.sidebar {
+    width: 200px;
+    padding: 30px;
+}
+
+.sidebar2 {
+    width: 200px;
+    height: 100%;
+    right: 30px;
+    position: fixed
+}
+
+/* Boutons */
+button {
+  background: rgb(255, 214, 221);
+  border: none;
+
+  font-size: 1rem;          /*  en rem */
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+
+  display: flex;            /* icône + texte alignés */
+  flex-direction: column;
+  align-items: left;
+  gap: 6px;
+
+  white-space: nowrap;      /*  “Tableau de bord” ne casse pas */
+}
+
+/* Image dans le bouton */
+button img {
+  width: 72px;
+  height: 72px;
+}
+
+.a1 {
+  max-width: 20%;       /* tableau ne dépasse pas 20% de l'écran à gauche */
+}
+
+.grid-head {
+  display: block;
+  width: 100%;
+  height: 20%;
+}
+
+.content {
+  flex: 1;
+  padding: 0;
+  min-width: 400px;
+  min-height: 400px;
+}
+
