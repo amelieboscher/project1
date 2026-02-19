@@ -17,10 +17,10 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0;
-    font-size: 1rem;  /* laisse la base suivre html */
+    font-size: 1rem;  /* laisser la base suivre html */
     overflow-x: hidden;  /* pas hidden partout */
     overflow-wrap: break-word;
-    align-content: flex-end;
+    align-content: center;
 }
 
 main {
@@ -37,15 +37,16 @@ main {
 
 .flexbox2 {
   margin: auto;
-  min-height: 500px;
-  width: 1200px;
-  font-size: clamp(18px, 1.2vw, 26px);
+  height: auto;
+  max-width: 30vw;
+  font-size: clamp(14px, 1.2vw, 18px);
 }
 
 /* UL = conteneur flex */
 
 #social {
-  margin: 0;
+  display:block;
+  
 }
 
 .element span {
@@ -75,8 +76,10 @@ main {
 
 .layout {
     flex: 1;
+    flex-direction:row;
     display: flex;
     min-height: 0; /*important*/
+    justify-content: center;
 }
 
 .sidebar {
@@ -103,15 +106,15 @@ button {
   display: flex;            /* icône + texte alignés */
   flex-direction: column;
   align-items: left;
-  gap: 6px;
+  gap: 8px;
 
   white-space: nowrap;      /*  “Tableau de bord” ne casse pas */
 }
 
 /* Image dans le bouton */
 button img {
-  width: 72px;
-  height: 72px;
+  width: 48px;
+  height: 48px;
 }
 
 .a1 {
@@ -125,7 +128,6 @@ button img {
 }
 
 .content {
-  flex: 1;
   padding: 0;
   min-width: 400px;
   min-height: 400px;
