@@ -43,7 +43,7 @@ nav {
 }
 
 .flexbox2 {
-  margin: 0 0 0 50px;
+  margin: 0 0 0 20px;
   height: auto;
   
   max-width: 80vw;
@@ -62,7 +62,8 @@ h1 {
 #social {
   display:block;
   width: 10vw;
-  padding-right: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
   position: fixed;
   margin: 0 50px 0 0;
 }
@@ -153,6 +154,7 @@ button img {
   width: 70vw;
   min-height: 50vh;
 }
+
 
 
 
