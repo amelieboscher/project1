@@ -99,7 +99,7 @@ h1 {
     flex-direction:row;
     display: flex;
     min-height: 0; /*important*/
-    justify-content: center;
+    justify-content: flex-start;
     
 }
 
@@ -153,5 +153,6 @@ button img {
   width: 50vw;
   min-height: 50vh;
 }
+
 
 
