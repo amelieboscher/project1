@@ -55,7 +55,7 @@ p {
 }
 
 h1 {
-  width: 24vw;
+  width: 40vw;
 }
 /* UL = conteneur flex */
 
@@ -154,6 +154,7 @@ button img {
   width: 70vw;
   min-height: 50vh;
 }
+
 
 
 
