@@ -25,6 +25,7 @@ body {
 
 main {
     font-size: clamp(14px, 1.2vw, 18px);
+    height: 100vh
 }
 
 nav {
@@ -117,12 +118,12 @@ h1 {
 }
 
 /* Boutons */
-button {
+.nav-btn {
   background: rgb(255, 214, 221);
   border: none;
 
   font-size: 1rem;          /*  en rem */
-  padding: 1.2rem 2rem;
+  padding: 1rem;
   border-radius: 12px;
 
   display: flex;            /* icône + texte alignés */
@@ -133,11 +134,12 @@ button {
   white-space: nowrap;      /*  “Tableau de bord” ne casse pas */
 }
 
-/* Image dans le bouton */
-button img {
-  width: 42px;
-  height: 42px;
+.nav-btn img{
+  width: 64px;
+  height: 64px;
 }
+
+
 
 .a1 {
   max-width: 20%;       /* tableau ne dépasse pas 20% de l'écran à gauche */
@@ -152,8 +154,54 @@ button img {
 .content {
   padding: 0;
   width: 70vw;
-  min-height: 50vh;
+  height: 100%;
 }
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+#constellation {
+  width: 100%;
+  height: 60vh;
+  background: rgba(2, 6, 26, 0.925);
+  display: block;
+  border-radius: 20px;
+}
+
+#projectForm {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+#projectForm input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.15);
+}
+
+#projectList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.5);
+  margin-bottom: 8px;
+}
+
 
 
 
